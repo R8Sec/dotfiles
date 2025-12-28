@@ -1,0 +1,35 @@
+[global_config]
+  window_state = maximise
+  borderless = True
+[keybindings]
+[profiles]
+  [[default]]
+    show_titlebar = False
+    use_system_font = False
+    font = ComicShannsMono Nerd Font 20
+    scrollbar_position = hidden
+    cursor_color = "#f5e0dc"
+    background_color = "#1e1e2e"
+    foreground_color = "#cdd6f4"
+    palette = "#45475a:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#bac2de:#585b70:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#a6adc8"
+    background_image = None
+  [[Catppuccin_Latte]]
+    show_titlebar = False
+    use_system_font = False
+    font = ComicShannsMono Nerd Font 20
+    scrollbar_position = hidden
+    cursor_color = "#dc8a78"
+    background_color = "#eff1f5"
+    foreground_color = "#4c4f69"
+    palette = "#5c5f77:#d20f39:#40a02b:#df8e1d:#1e66f5:#ea76cb:#179299:#acb0be:#6c6f85:#d20f39:#40a02b:#df8e1d:#1e66f5:#ea76cb:#179299:#bcc0cc"
+    background_image = None
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
+
