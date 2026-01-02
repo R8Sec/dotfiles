@@ -16,6 +16,9 @@ set $terminal alacritty
 # is used in the bar {} block below.
 #font pango:monospace 8
 
+# VirtualBox guest additions
+#exec VBoxClient-all
+
 # picom
 exec --no-startup-id picom
 
