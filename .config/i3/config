@@ -19,6 +19,13 @@ set $terminal alacritty
 # picom
 exec --no-startup-id picom
 
+# Setup resolution, change as required
+# You can generate a mode line using `cvt 2560 1440 60`
+# Use xrandr to find your display
+#exec --no-startup-id xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync
+#exec --no-startup-id xrandr --addmode Virtual1 "2560x1440_60.00"
+#exec --no-startup-id xrandr --output Virtual1 --mode "2560x1440_60.00"
+
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
