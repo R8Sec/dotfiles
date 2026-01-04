@@ -19,10 +19,13 @@ set $terminal alacritty
 # VirtualBox guest additions
 #exec VBoxClient-all
 
-# fix VM screen freeze bug
-#exec --no-startup-id xset -dpms
-#exec --nostartup-id xset s off
-#exec --no-startup-id xset s noblank
+# If VBoxClient-all is not available
+#exec VBoxClient --clipboard
+#exec VBoxClient --draganddrop
+#exec VBoxClient --checkhostversion
+#exec VBoxClient --seamless
+#exec VBoxClient --vmsvga
+#exec VBoxClient --vmsvga-session
 
 # picom
 exec --no-startup-id picom
