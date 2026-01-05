@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Scale java application such as burpsuite
+export _JAVA_OPTIONS="-Dsun.java2d.uiScale=2"
+
 # Qt
 # This settings are for a 1440p display
 export QT_QPA_PLATFORMTHEME=qt6ct
