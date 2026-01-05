@@ -4,17 +4,20 @@
 # This settings are for a 1440p display
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export QT_SCALE_FACTOR=1.5
+export QT_SCALE_FACTOR=1
 export QT_FONT_DPI=144
 
 # Cursor
-export XCURSOR_SIZE=36
+export XCURSOR_SIZE=32
 
 # Disable screen sleep and DPMS
 # Otherwise a VM will crash
 xset s off
 xset s noblank
 xset -dpms
+
+# Configure DPI
+xrdb -merge ~/.Xresources
 
 # When using startx rename this file to .xinitrc and add the following
 #exec i3

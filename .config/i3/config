@@ -17,15 +17,15 @@ set $terminal alacritty
 #font pango:monospace 8
 
 # VirtualBox guest additions
-#exec VBoxClient-all
+#exec_always VBoxClient-all
 
 # If VBoxClient-all is not available
-#exec VBoxClient --clipboard
-#exec VBoxClient --draganddrop
-#exec VBoxClient --checkhostversion
-#exec VBoxClient --seamless
-#exec VBoxClient --vmsvga
-#exec VBoxClient --vmsvga-session
+#exec_always VBoxClient --clipboard
+#exec_always VBoxClient --draganddrop
+#exec_always VBoxClient --checkhostversion
+#exec_always VBoxClient --seamless
+#exec_always VBoxClient --vmsvga
+#exec_always VBoxClient --vmsvga-session
 
 # picom
 exec --no-startup-id picom
