@@ -1,25 +1,22 @@
 #!/bin/sh
 
-# Scale java application such as burpsuite
+# Java apps
 export _JAVA_OPTIONS="-Dsun.java2d.uiScale=2"
 
 # Qt
-# This settings are for a 1440p display
-export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export QT_SCALE_FACTOR=1
-export QT_FONT_DPI=144
+export QT_ENABLE_HIGHDPI_SCALING=1
 
 # Cursor
 export XCURSOR_SIZE=32
 
 # Disable screen sleep and DPMS
-# Otherwise a VM will crash
+# DPMS makes VMs will crash
 xset s off
 xset s noblank
 xset -dpms
 
-# Configure DPI
 xrdb -merge ~/.Xresources
 
 # When using startx rename this file to .xinitrc and add the following
