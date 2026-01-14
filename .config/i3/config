@@ -64,10 +64,9 @@ bindsym $mod+Ctrl+l exec i3lock -i ~/.config/backgrounds/mountfuji.png
 exec --no-startup-id nm-applet
 
 # Window settings
-default_border pixel 2
-default_floating_border pixel 2
-gaps bottom 5
-gaps inner 5
+default_border pixel 0
+default_floating_border pixel 0
+gaps inner 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
