@@ -1,0 +1,41 @@
+* {
+  font-family: "ComicShannsMono Nerd Font";
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 0 4px 0 0;
+}
+
+window#waybar {
+  background: rgba(30, 30, 46, 0.9); /* macchiato base */
+  color: #cad3f5;
+}
+
+#workspaces button {
+  padding: 0 8px 0 12px;
+  color: #a5adcb;
+}
+
+#workspaces button.focused {
+  background: #494d64;
+  color: #c6a0f6;
+  border-bottom: 3px solid #c6a0f6;
+}
+
+#workspaces button.urgent {
+  background: #ed8796;
+  color: #24273a;
+}
+
+#window {
+  color: #cad3f5;
+}
+
+#pulseaudio,
+#memory,
+#cpu,
+#disk,
+#network,
+#clock,
+#keyboard-state {
+  margin: 0 4px;
+}
