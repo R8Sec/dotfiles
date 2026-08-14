@@ -112,7 +112,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':fzf-tab:complete:*:*' fzf-preview '
     if [[ -d "$realpath" ]]; then
         ls -lah --color=always -- "$realpath"
-    elif (( $+commands[batcat] )) && [[ -f "$realpath" ]] && [[ "$(file ...)" == *text* ]]; then
+    elif (( $+commands[batcat] )) && [[ -f "$realpath" ]] && [[ "$(file -- $realpath)" == *text* ]]; then
         batcat --color=always --style=numbers --line-range :500 -- "$realpath"
     fi
 '
